@@ -107,21 +107,6 @@ $(".candidate").hide();
 						<input type="password" name="password" class="form-control"
 							placeholder="Password" size="100" />
 					</div>
-
-					 <div class="input-group">
-						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<input class="form-control" name="linkedInUrl"
-							placeholder="LinkedIn URL" size="100" >
-					</div> 
-					
-					      <!-- MyUploadForm -->
-      <div th:object="${myUploadForm}" method="POST"
-         action="" enctype="multipart/form-data">               
-         <br/>                 
-         Cover Letter (1): <input th:field="*{fileDatas}" type="file"/><br />      
-         CV (2): <input th:field="*{fileDatas}" type="file"/><br />       
-      </div>
-					
 					<br>
 
 					<div class="input-group">

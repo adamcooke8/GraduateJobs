@@ -52,7 +52,7 @@ public class MyFileUploadController {
       String description = myUploadForm.getDescription();
       System.out.println("Description: " + description);
  
-      // Root Directory.
+      // Root Directory. nm,  
       String uploadRootPath = request.getServletContext().getRealPath("upload");
       System.out.println("uploadRootPath=" + uploadRootPath);
  

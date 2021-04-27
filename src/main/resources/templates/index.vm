@@ -33,6 +33,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
+						<li class="active"><a href="about.htm">About</a></li>
 						<li class="active"><a href="registration.htm">Register</a></li>
 						<li class="active"><a href="login.htm">Login</a></li>
 
