@@ -55,10 +55,12 @@ public class RegistrationController {
 		String name = userRegistrationRequest.getName();
 		String email = userRegistrationRequest.getEmail();
 		String username = userRegistrationRequest.getUsername();
+		String linkedInUrl = userRegistrationRequest.getLinkedInUrl();
 		
 		name = ValidateScripting.validate(name);
 		email = ValidateScripting.validate(email);
 		username = ValidateScripting.validate(username);
+		linkedInUrl = ValidateScripting.validate(linkedInUrl);
 
 		if (result.hasErrors()) {
 			return ViewMapper.REGISTRATION;
@@ -68,7 +70,7 @@ public class RegistrationController {
 
 			System.out.println(username);
 			
-			employerRepository.save(new Employer(name, email, null, username));
+			employerRepository.save(new Employer(name, email, linkedInUrl, username));
 		}
 
 		if(Role.candidate.name().equalsIgnoreCase(userRegistrationRequest.getRole())){
@@ -78,13 +80,14 @@ public class RegistrationController {
 			name = ValidateScripting.validate(name);
 			email = ValidateScripting.validate(email);
 			username = ValidateScripting.validate(username);
+			linkedInUrl = ValidateScripting.validate(linkedInUrl);
 			univ = ValidateScripting.validate(univ);
 			
 			candidateRepository.save(
 					new Candidate(name,
 							univ,
 							email,
-							null,
+							linkedInUrl,
 							userRegistrationRequest.getDegree(), username));
 		}
 

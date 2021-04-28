@@ -107,6 +107,13 @@ $(".candidate").hide();
 						<input type="password" name="password" class="form-control"
 							placeholder="Password" size="100" />
 					</div>
+					
+					<div class="input-group">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<input class="form-control" name="linkedInUrl"
+							placeholder="LinkedIn URL" size="100" >
+					</div>
+					
 					<br>
 
 					<div class="input-group">
