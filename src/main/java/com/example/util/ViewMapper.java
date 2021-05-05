@@ -10,8 +10,10 @@ public class ViewMapper {
 	public static final String REGISTRATION = "register";
 	public static final String LOGIN = "login";
 	public static final String INDEX = "index";
+	public static final String ABOUT = "about";
 	
 	public static final String CANDIDATE_JOBS = "candidate_view_jobs";
 	public static final String CANDIDATE_PROFILE = "candidate_profile";
+	public static final String CANDIDATE_UPDATE_PROFILE = "candidate_update_profile";
 
 }

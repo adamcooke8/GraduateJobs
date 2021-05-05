@@ -5,9 +5,11 @@ public class URLMapper {
 	public static final String CANDIDATE_DASHBOARD = "/candidate_dashboard.htm";
 	public static final String CANDIDATE_JOBS = "/candidate_jobs.htm";
 	public static final String CANDIDATE_APPLY_JOB = "/candidate_apply_jobs.htm";
+	public static final String CANDIDATE_UPDATE_PROFILE_URL = "candidate_update_profile.htm";
 
 	public static final String REGISTRATION = "registration.htm";
 	public static final String INDEX = "index.htm";
+	public static final String ABOUT = "about.htm";
 
 	public static final String EMPLOYER_DELETE_JOB_URL = "employer_delete_job.htm";
 	public static final String EMPLOYER_UPDATE_JOB_URL = "employer_update_job.htm";
